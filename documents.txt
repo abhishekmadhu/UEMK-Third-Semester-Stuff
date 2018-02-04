@@ -1,0 +1,71 @@
+/*
+ * This programme (by @abhishekmadhu) demonstrates the use of
+ * classes and objects in a Java code.
+ * 
+ * Please use only the functions 1, 5 and 6. Rest will be completed soon.
+ */
+
+
+
+
+
+
+import java.io.*;
+import java.util.*;
+
+
+class projectCar{
+    int noOfPassenger = 4;
+    double fuel =4.00;
+    double mileage = 4.00;
+    
+    void incPass()
+    {
+        noOfPassenger++;
+    }
+    
+    
+}
+
+
+
+public class Car
+{
+
+    public static void main(){
+        Scanner in = new Scanner(System.in);
+        projectCar myCar = new projectCar();
+        System.out.println("The no of people in the car is : " + myCar.noOfPassenger);
+        int cont = 0;
+        
+        
+        while(cont!=6){
+            
+            
+            System.out.println("Enter the procedure:");
+            System.out.println("1. Increase passengers.");
+            System.out.println("2. Decrease passengers.");
+            System.out.println("3. Go some distance forward.");
+            System.out.println("4. Read mileage data.");
+            System.out.println("5. Display passenger data.");
+            System.out.println("6. Exit System.");
+            
+            cont = in.nextInt();
+            
+            if(cont==1)
+                myCar.incPass();
+            /*else if(cont==2)
+                //decPass();
+            else if(cont == 3)
+                //goForward();
+            else if(cont == 4)
+                //mileageData(); */   
+            else if (cont == 5)
+                System.out.println("The current no of Passengers is : " + myCar.noOfPassenger);
+        }
+        //System.out.println("Thank you!");
+    }
+    
+        
+}
+a
